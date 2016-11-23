@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Price Based Ecommerce Search Engine</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap-theme.min.css">
+    
+  </head>
+  <body>
+    <div>
+      <input type="text" class="input input-lg"/>
+      <input type="submit" class="btn btn-lg btn-danger">
+    </div>
+
+
+    {{ range .Results }} 
+    {{.}}
+    {{end }}
+  </body>
+</html>
